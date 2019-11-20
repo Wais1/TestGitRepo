@@ -7,6 +7,7 @@ print("Degrees:" + str(degrees))
 print("Radians: " + str(radians))
 
 #2.
+
 student1, student2, student3 = 80.0, 90.0, 66.5
 average = sum((student1,student2,student3))/3
 print("Student scores:\n" + str(student1), str(student2), str(student3))
@@ -32,12 +33,18 @@ print("Class3: " + str(calcRemainder(51,6)))
 
 #4.
 
+#Updated: Solution utilizes a function for the class assignment.
+
 pi = 3.14
 pie_diameter = 55.4
 pie_radius = pie_diameter/2
 circumference = 2 * pi * pie_radius
 circumference_msg = "Jimmy's pie has a circumference"
-print(circumference_msg, circumference)
+
+def getCircumference(radius):
+    return (2 * pi * radius)
+
+print(circumference_msg, getCircumference(pie_radius))
 
 #5.
 
